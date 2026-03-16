@@ -14,7 +14,7 @@
  */
 class MicrophoneService {
   // ── Tuning constants (adjust these to taste) ────────────────
-  static SENSITIVITY    = 0.70;   // 0-1 — volume level considered "blowing"
+  static SENSITIVITY    = 0.20;   // 0-1 — volume level considered "blowing"
   static GRACE_PERIOD   = 150;    // ms — how long isBlowing stays true after volume dips
 
   /**
