@@ -507,6 +507,7 @@ class InteractionManager {
       strokeThickness: 4,
       align: 'center',
     })
+    
       .setOrigin(0.5)
       .setAlpha(0)
       .setScale(0.5);
