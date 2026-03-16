@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday Salma!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+
+  <div id="gameboy-device">
+
+    <!-- ── Top label ──────────────────────────────────────────── -->
+    <div id="gb-header">
+      <span class="gb-logo">GAME BOY</span>
+      <span class="gb-sub">Birthday Edition</span>
+    </div>
+
+    <!-- ── Screen bezel ───────────────────────────────────────── -->
+    <div id="screen-bezel">
+      <div id="screen-container">
+        <!-- Phaser canvas is injected here by main.js -->
+      </div>
+    </div>
+
+    <!-- ── Controls area ──────────────────────────────────────── -->
+    <div id="controls">
+
+      <!-- D-pad (left side) -->
+      <div id="dpad-container">
+        <button id="dpad-up"    class="dpad-btn" aria-label="Up">▲</button>
+        <div class="dpad-mid-row">
+          <button id="dpad-left"  class="dpad-btn" aria-label="Left">◀</button>
+          <div class="dpad-center"></div>
+          <button id="dpad-right" class="dpad-btn" aria-label="Right">▶</button>
+        </div>
+        <button id="dpad-down"  class="dpad-btn" aria-label="Down">▼</button>
+      </div>
+
+      <!-- Action buttons (right side) -->
+      <div id="action-buttons">
+        <button id="btn-b" class="action-btn" aria-label="B button">B</button>
+        <button id="btn-a" class="action-btn" aria-label="A button">A</button>
+      </div>
+
+    </div>
+
+    <!-- ── Bottom decorative strip ────────────────────────────── -->
+    <div id="gb-footer">
+      <div class="gb-speaker">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Game modules -->
+  <script src="js/InputHandler.js"></script>
+  <script src="js/MicrophoneService.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/InteractionManager.js"></script>
+  <script src="js/CabinScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
